@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yard Work Joe's</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+      <header>
+        <nav>
+          <div class="left-side">
+            <img src="/images/YWJ_withName_logo.png" alt="Yard Work Joe's Logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html"><img class="icons" src="/images/home_icon.png" alt="Home"></a></li>
+            <li><a href="service.html"><img class="icons" src="/images/service_icon.png" alt="Services"></a></li>
+            <li><a href="about.html"><img class="icons" src="/images/about_icon.png" alt="About"></a></li>
+            <li><a href="contact.html"><img class="icons" src="/images/contact_icon.png" alt="Contact"></a></li>
+          </ul>
+          <div id="hamburger-icon" onclick ="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+
+        <ul class="mobile-menu">
+          <li><a href="index.html"><img class="icons" src="/images/home_icon.png" alt="Home"></a></li>
+          <li><a href="service.html"><img class="icons" src="/images/service_icon.png" alt="Services"></a></li>
+          <li><a href="about.html"><img class="icons" src="/images/about_icon.png" alt="About"></a></li>
+          <li><a href="contact.html"><img class="icons" src="/images/contact_icon.png" alt="Contact"></a></li>
+        </ul>
+      </header>
+
+  <section class="hero" id="service-page-hero"><!--service-page-hero-->
+    <div class="hero-content"><!--service-hero-->
+      <h1>What We Do Best</h1>
+      <p>Explore our range of professional landscaping services</p>
+      <a href="contact.html" class="hero-button">Get a Free Quote</a>
+    </div>
+  </section>
+
+<div class="container-service">
+  <div class="service-wrapper">
+    <div class="service-service">
+      <h1>Our Services</h1>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-brands fa-chromecast"></i>
+          <img src="/images/lawnmower_icon.png" alt="lawnmower">
+          <h2>Lawn & Turf Care</h2>
+          <h3>Lawn Mowing & Edging</h3>
+          <p>Precision mowing and crisp edging for a consistently clean and well-manicured lawn. Our team uses professional-grade equipment to maintain healthy, attractive turf.</p>
+        </div>
+
+        <div class="card">
+          <i class="lawnmowing"></i>
+          <img src ="/images/pruning_icon.png" alt="pruners">
+          <h2>Trimming & Pruning</h2>
+          <h3>Shrub & Tree Shaping</h3>
+          <p>Maintain the health, shape, and appearance of your landscape with expert trimming and pruning. We care for hedges, bushes, and trees to ensure clean lines and healthy growth.</p>
+        </div>
+
+        <div class="card">
+          <i class="marketing"></i>
+          <img src ="/images/installation_icon.png" alt="pruners">
+          <h2>Landscape Installation</h2>
+          <h3>Planting & Design Features</h3>
+          <p>Transform your yard with new sod, colorful flower beds, mulch, shrubs, or decorative stonework. Our installations are designed to elevate curb appeal and suit your vision.</p>
+        </div>
+
+        <div class="card">
+          <i class="weed"></i>
+          <img src ="/images/sprinkler_icon.png" alt="pruners">
+          <h2>Irrigation & Watering Systems</h2>
+          <h3>Sprinkler Systems & Drip Irrigation</h3>
+          <p>Ensure efficient water use and plant health with smart irrigation. We install and maintain watering systems for reliability, coverage, and water conservation.</p>
+        </div>
+        <div class="card">
+          <i class="weed"></i>
+          <img src ="/images/wheel_burrow_icon.png" alt="pruners">
+          <h2>Custom Landscape Solutions</h2>
+          <h3>Special Projects & Enhancements</h3>
+          <p>Have something unique in mind? We offer grading, landscape lighting, rock features, hauling, and other custom services to bring your outdoor goals to life.</p>
+        </div>
+        <div class="card">
+          <i class="weed"></i>
+          <img src ="/images/rake_icon.png" alt="pruners">
+          <h2>Seasonal Yard Cleanups</h2>
+          <h3>Spring & Fall Services</h3>
+          <p>Restore order to your outdoor space with comprehensive cleanups. We remove leaves, branches, and seasonal debris, helping prepare your yard for summer beauty or winter rest.</p>
+        </div>
+      </div> <!-- .cards -->
+    </div>
+  </div>
+</div>
+
+  <section class="star-contact">
+  <div class="contact">
+    <form action ="https://formspree.io/f/mkgzjzkp" method="POST">
+      <h1>Contact Us</h1>
+
+      <input type="text" name="firstname" id="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <input type="text" name="mobile" id="mobile" placeholder="Phone Number" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" cols="20" placeholder="Type your message here..." required></textarea>
+
+      <div class="submit-container">
+        <input type="submit" value="Send" id="button" />
+      </div>
+    </form>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="/images/YWJ_withName_logo.png" alt="Yard Work Joe's Logo" class="footer-logo" />
+      <div class="footer-section">
+        <h4>Service Areas</h4>
+        <ul>
+          <li>Prescott</li>
+          <li>Prescott Valley</li>
+          <li>Chino Valley</li>
+          <li>Cottonwood</li>
+          <li>Camp Verde</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: info@yardworkjoe.com</li>
+          <li>Phone: (555) 123-4567</li>
+          <li>Address: 123 Lawn St, Prescott, AZ</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Yard Work Joe's</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

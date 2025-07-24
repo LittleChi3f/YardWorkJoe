@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Yard Work Joe's</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+      <!--poppins-font-family------------------->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+
+  <body>
+      <header>
+        <nav>
+          <div class="left-side">
+            <img src="/images/YWJ_withName_logo.png" alt="Yard Work Joe's Logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html"><img class="icons" src="/images/home_icon.png" alt="Home"></a></li>
+            <li><a href="service.html"><img class="icons" src="/images/service_icon.png" alt="Services"></a></li>
+            <li><a href="about.html"><img class="icons" src="/images/about_icon.png" alt="About"></a></li>
+            <li><a href="contact.html"><img class="icons" src="/images/contact_icon.png" alt="Contact"></a></li>
+          </ul>
+          <div id="hamburger-icon" onclick ="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+
+        <ul class="mobile-menu">
+          <li><a href="index.html"><img class="icons" src="/images/home_icon.png" alt="Home"></a></li>
+          <li><a href="service.html"><img class="icons" src="/images/service_icon.png" alt="Services"></a></li>
+          <li><a href="about.html"><img class="icons" src="/images/about_icon.png" alt="About"></a></li>
+          <li><a href="contact.html"><img class="icons" src="/images/contact_icon.png" alt="Contact"></a></li>
+        </ul>
+      </header>
+
+    <section class="hero" id="hero-contact">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <h2>Let’s Bring Your Yard to Life </h2>
+        <p>Have a question? Ready to start your next landscaping project? Just drop us a line — we’re here to help!</p>
+      </div>
+    </section>
+
+
+<div class="contact-wrapper-page">
+    <!-- Office Hours -->
+    <section class="office-hours-horizontal">
+      <div class="icon-box">
+        <i class="fa-solid fa-clock"></i>
+      </div>
+      <div class="office-info">
+        <h2>Office Hours</h2>
+        <p><strong>Mon – Fri:</strong> 8:00 AM – 5:00 PM</p>
+        <p class="closed"><strong>Saturday:</strong> Closed</p>
+        <p class="closed"><strong>Sunday:</strong> Closed</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <div class="contact-page">
+        <form action ="https://formspree.io/f/mkgzjzkp" method="POST" enctype="multipart/form-data">
+          <h1>Contact Us</h1>
+          
+          <input type="text" name="First Name: " id="firstName" placeholder="First Name" required>
+          <input type="text"  name="Last Name: "id="lastName" placeholder="Last Name" required>
+          <input type="email" name="Email: "id="email" placeholder="Email" required>
+          <input type="text" name ="Phone Number: "id="mobile" placeholder="Phone Number" required>
+          
+          <input type="text" name ="Address: " id="address" placeholder="Address" required>
+          
+          <fieldset>
+            <legend>Select Service Type(s):</legend>
+            <label><input type="checkbox" name="service" value="Lawn Care"> Lawn Care</label><br>
+            <label><input type="checkbox" name="service" value="Landscaping Design"> Landscaping Design</label><br>
+            <label><input type="checkbox" name="service" value="Tree Trimming"> Tree Trimming / Removal</label><br>
+            <label><input type="checkbox" name="service" value="Irrigation Installation"> Irrigation / Sprinkler Installation</label><br>
+            <label><input type="checkbox" name="service" value="Seasonal Clean-Up"> Seasonal Clean-Up</label><br>
+            <label><input type="checkbox" name="service" value="Mulching / Edging"> Mulching / Edging</label><br>
+            <label><input type="checkbox" name="service" value="Other"> Other</label>
+          </fieldset>
+          
+          <h4>Type Your Message Here....</h4>
+          <textarea name="Message: " required placeholder="Describe your project or needs..."></textarea>
+          
+          <input type="submit" value="Send" id="button">
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+      <div class="footer-content">
+        <img src="/images/YWJ_withName_logo.png" alt="Yard Work Joe's Logo" class="footer-logo">
+        <div class="footer-section">
+          <h4>Service Areas</h4>
+          <ul>
+            <li>Prescott</li>
+            <li>Prescott Valley</li>
+            <li>Chino Valley</li>
+            <li>CottonWood</li>
+            <li>Camp Verde</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Email: info@yardworkjoe.com</li>
+            <li>Phone: (555) 123-4567</li>
+            <li>Address: 123 Lawn St, Prescott, AZ</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Yard Work Joe's</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+  
+</html>
