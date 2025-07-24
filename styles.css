@@ -58,7 +58,7 @@ ul{
 }
 .icons:hover{
     transform: scale(1.1);
-    transition: trasform 0.3s ease;
+    transition: transform 0.3s ease;
     
 }
 .left-side{
@@ -76,7 +76,7 @@ ul{
   justify-content: center;
   color: white;
   text-align: center;
-  padding:160px 20x;
+  padding:160px 20px;
 } 
 .hero h1 {
   font-size: 3.5rem;
