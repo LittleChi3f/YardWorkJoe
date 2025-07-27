@@ -54,6 +54,8 @@ ul{
 }
 .icons{
     height: 70px;
+    width:auto;
+    object-fit:contain;
     margin:30px;
 }
 .icons:hover{
@@ -63,8 +65,14 @@ ul{
 }
 .left-side{
     height:150px;
+    width:auto;
     display: flex;
     flex-direction: row;
+}
+.left-side img{
+  height:150px;
+  width:auto;
+  object-fit: contain;
 }
 .hero {
   height: 60vh;
